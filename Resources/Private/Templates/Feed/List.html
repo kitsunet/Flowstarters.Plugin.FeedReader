@@ -1,0 +1,12 @@
+<f:if condition="{items}">
+	<div class="accordion">
+		<f:for each="{items}" as="item">
+			<div class="a-body">
+				<div class="a-content">
+					<f:format.raw>{item.content}</f:format.raw>
+				</div>
+			</div>
+		</f:for>
+	</div>
+</f:if>
+

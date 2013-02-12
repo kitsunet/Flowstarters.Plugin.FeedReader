@@ -1,0 +1,19 @@
+TYPO3:
+  Flow:
+    reflection:
+      # adding one custom annotation from simplepie
+      ignoredTags: ['api', 'package', 'subpackage', 'license', 'copyright', 'author', 'const', 'see', 'todo', 'scope', 'fixme', 'test', 'expectedException', 'depends', 'dataProvider', 'group', 'codeCoverageIgnore', 'xml_lang']
+    object:
+      excludeClasses:
+        'simplepie.simplepie' : ['.*']
+  TYPO3CR:
+    contentTypes:
+      'Flowstarters.Plugin.FeedReader:Feed':
+        superTypes: ['TYPO3.Neos.ContentTypes:Plugin']
+        label: 'Feed Content'
+        properties:
+          feedUrl:
+            type: string
+            label: 'Feed URL'
+            group: 'pluginSettings'
+            reloadOnChange: true

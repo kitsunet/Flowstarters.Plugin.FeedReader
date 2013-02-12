@@ -1,0 +1,17 @@
+'Flowstarters.Plugin.FeedReader:Feed':
+  superTypes: ['TYPO3.Neos.ContentTypes:Plugin']
+  ui:
+    label: 'Feed Display'
+    group: 'Plugins'
+    icon:
+      light: 'Images/Icons/White/rss_icon-16.png'
+      dark: 'Images/Icons/Black/rss_icon-16.png'
+    inlineEditable: false
+  properties:
+    feedUrl:
+      type: string
+      ui:
+        label: 'Feed URL'
+        reloadIfChanged: true
+        inspector:
+          group: 'pluginSettings'

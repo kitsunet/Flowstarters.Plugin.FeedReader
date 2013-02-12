@@ -1,0 +1,7 @@
+# Feed Display
+prototype(Flowstarters.Plugin.FeedReader:Feed) < prototype(TYPO3.Neos.ContentTypes:Plugin)
+prototype(Flowstarters.Plugin.FeedReader:Feed) {
+	package = 'Flowstarters.Plugin.FeedReader'
+	controller = 'Feed'
+	action = 'list'
+}
